@@ -18,7 +18,7 @@
             <asp:Parameter Name="DEPT_ID" Type="String" />
         </UpdateParameters>
     </asp:SqlDataSource>
-    <div class="row-view" style="margin-top:-350px;">
+    <div class="row-view" style="margin-top: 0px;">
         <asp:GridView ID="GridView1" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="DEPT_ID" DataSourceID="SqlDataSource1" Width="757px" AllowPaging="True" Height="417px" CellPadding="5" BorderStyle="Inset">
             <Columns>
                 <asp:BoundField DataField="DEPT_ID" HeaderText="DEPT_ID" ReadOnly="True" SortExpression="DEPT_ID" />

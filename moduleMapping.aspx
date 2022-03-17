@@ -16,9 +16,9 @@
         </SelectParameters>
     </asp:SqlDataSource>
 
-    <div class="row-view" style="margin-top: -200px;">
+    <div class="row-view" style="margin-top:-200px;">
         
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Width="917px" Height="101px" HorizontalAlign="Center" DataKeyNames="TEACHER_ID" CellPadding="5">
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Width="917px" Height="101px" HorizontalAlign="Center" DataKeyNames="TEACHER_ID" CellPadding="10">
         <Columns>
             <asp:BoundField DataField="NAME" HeaderText="NAME" SortExpression="NAME" />
             <asp:BoundField DataField="EMAIL" HeaderText="EMAIL" SortExpression="EMAIL" />
@@ -30,7 +30,7 @@
     </asp:GridView>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-        <div>
+        <div style="margin-left:0px">
             <asp:Label ID="Label1" runat="server" Font-Bold="True" Text="SELECT TEACHER" Font-Size="Large"></asp:Label>
             <br />
             <br />
@@ -44,13 +44,13 @@
             <asp:ControlParameter ControlID="DropDownList1" Name="TEACHER_ID" PropertyName="SelectedValue" />
         </SelectParameters>
     </asp:SqlDataSource>
-    <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource3" Height="101px" Width="1220px" EmptyDataText="No module found for selected teacher." CellPadding="5">
+    <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource3" Height="101px" Width="1220px" EmptyDataText="No module found for selected teacher." CellPadding="10">
         <Columns>
             <asp:BoundField DataField="MODULE_CODE" HeaderText="MODULE_CODE" SortExpression="MODULE_CODE" />
             <asp:BoundField DataField="MODULE_NAME" HeaderText="MODULE_NAME" SortExpression="MODULE_NAME" />
             <asp:BoundField DataField="CREDIT_HOURS" HeaderText="CREDIT_HOURS" SortExpression="CREDIT_HOURS" />
         </Columns>
-        <EmptyDataRowStyle BorderStyle="None" Font-Size="XX-Large" />
+        <EmptyDataRowStyle BorderStyle="None" Font-Size="XX-Large" Font-Bold="True" />
         <HeaderStyle BackColor="#3A3636" ForeColor="White" />
     </asp:GridView>
 </asp:Content>

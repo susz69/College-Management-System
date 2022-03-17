@@ -18,7 +18,7 @@
             <asp:Parameter Name="ASSIGNMENT_ID" Type="String" />
         </UpdateParameters>
     </asp:SqlDataSource>
-    <div class="row-view">
+    <div class="row-view" style="margin-top:-35rem">
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="ASSIGNMENT_ID" DataSourceID="SqlDataSource1" Width="886px" CellPadding="5" Height="332px">
             <Columns>
                 <asp:BoundField DataField="ASSIGNMENT_ID" HeaderText="ASSIGNMENT_ID" ReadOnly="True" SortExpression="ASSIGNMENT_ID" />
@@ -48,16 +48,16 @@
             <InsertItemTemplate>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <br />
-                ASSIGNMENT ID*&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ASSIGNMENT ID*&nbsp;&nbsp;
             <asp:TextBox ID="ASSIGNMENT_IDTextBox" runat="server" Text='<%# Bind("ASSIGNMENT_ID") %>' />
                 <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
             <asp:CustomValidator ID="pkVal" runat="server" ControlToValidate="ASSIGNMENT_IDTextBox" ErrorMessage="Assignment ID already exists!" ForeColor="#CC3300" OnServerValidate="pkVal_ServerValidate" ValidateEmptyText="True"></asp:CustomValidator>
                 <br />
-                &nbsp; ASSIGNMENT TYPE*&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp; ASSIGNMENT TYPE*&nbsp;&nbsp;
             <asp:TextBox ID="ASSIGNMENT_TYPETextBox" runat="server" Text='<%# Bind("ASSIGNMENT_TYPE") %>' />
                 <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="ASSIGNMENT_TYPETextBox" ErrorMessage="Please enter assignment type*" ForeColor="#CC3300"></asp:RequiredFieldValidator>
                 <br />
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

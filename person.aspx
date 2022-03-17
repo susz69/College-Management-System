@@ -20,7 +20,7 @@
         </UpdateParameters>
     </asp:SqlDataSource>
 
-    <div class="row-view" style="margin-top:-400px;">
+    <div class="row-view" style="margin-top:0px;">
     <asp:GridView ID="GridView1" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="PERSON_ID" DataSourceID="SqlDataSource1" Width="854px" BorderStyle="Inset" AllowPaging="True" CellPadding="5" GridLines="None">
         <Columns>
             <asp:BoundField DataField="PERSON_ID" HeaderText="PERSON_ID" ReadOnly="True" SortExpression="PERSON_ID" />

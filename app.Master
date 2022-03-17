@@ -31,7 +31,15 @@
                     <li><a href="moduleMapping.aspx"><i class="fa fa-table"></i>&nbsp; Module Mapping</a></li>
                     <li><a href="result.aspx"><i class="fa fa-table"></i>&nbsp; Results</a></li>
                     <li><a href="payment.aspx"><i class="fa fa-money"></i>&nbsp; Payments</a></li>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <p style="font-size:small;background-color:#e9ecef;text-align:center;">© 2022 - Designed by <a style="text-decoration:none; color:green" href="https://www.linkedin.com/in/susz9/" target="_blank"><b>susZ</b></a></p>
                 </ul>
+                
             </nav>
             <div class="wrapper">
                 <div class="section">
